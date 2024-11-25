@@ -1,13 +1,15 @@
+import 'react-vertical-timeline-component/style.min.css';
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
-import 'react-vertical-timeline-component/style.min.css';
-import { styles } from '../styles';
-import { experiences } from '../constants';
-import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
+
+import { SectionWrapper } from '../hoc';
+import { experiences } from '../constants';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -102,7 +104,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  'https://drive.google.com/file/d/1JD0RLWiISyaE7sGFvLShCx_oWLXw7Pfo/view?usp=sharing', //paste the link to your resume here
                   '_blank'
                 )
               }

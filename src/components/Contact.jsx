@@ -1,10 +1,11 @@
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import { useRef, useState } from 'react';
+
+import { SectionWrapper } from '../hoc';
+import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+import { slideIn } from '../utils/motion';
+import { styles } from '../styles';
 
 const Contact = () => {
   const formRef = useRef();
@@ -25,20 +26,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_zaw6u8i',
+        'template_scsxx0i', 
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Daniel Au',
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'ubc.danielau@gmail.com', 
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'FEQulXsen08Hu24d6'
       )
       .then(
         () => {

@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#050816',
-        secondary: '#aaa6c3',
-        tertiary: '#151030',
+        primary: '#67B7D1',
+        secondary: '#8AC7DB',
+        tertiary: '#ADD8E6',
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
@@ -49,9 +49,9 @@ export default {
           "linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
         experienceLight:
           'linear-gradient(137deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.9) 60%)',
-        hero: 'linear-gradient(135deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,0.95) 60%)',
+        hero: 'linear-gradient(135deg, rgba(244,244,246,0.8) 60%, rgba(244,244,246,0.8) 60%)',
         'hero-mobile':
-          'linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,1) 60%)',
+          'linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(244,244,246,0.8) 60%)',
         tech: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/nairobi.png')",
       },
       fontFamily: {

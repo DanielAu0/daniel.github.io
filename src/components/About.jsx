@@ -1,9 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { styles } from '../styles';
-import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+
+import React from 'react';
 import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion';
+import { services } from '../constants';
+import { styles } from '../styles';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -37,12 +38,10 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+In my professional journey, I've maintained an open-source .NET database driver with over 600 million downloads, 
+streamlined DevOps pipelines for greater efficiency, created tools that improve performance and user satisfaction, and developed award winning web applcations. 
+Whether it’s developing optimized software solutions, crafting beautiful web applications, or collaborating in agile teams, 
+I bring a commitment to excellence and continuous learning to every project.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

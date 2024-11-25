@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
-import { styles } from '../styles';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import { github, pineapple, pineappleHover } from '../assets';
+
+import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion';
 import { projects } from '../constants';
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import { styles } from '../styles';
 
 const ProjectCard = ({
   id,
@@ -79,8 +80,8 @@ const ProjectCard = ({
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
+              whitespace-nowrap gap-1 sm:w-[170px] sm:h-[50px] 
+              w-[150px] h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
@@ -101,7 +102,7 @@ const ProjectCard = ({
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
                   w-[30px] h-[30px] object-contain"
               />
-              LIVE DEMO
+              LINK TO REPO
             </button>
           </div>
         </>
@@ -126,9 +127,7 @@ const Projects = () => {
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
           These projects demonstrate my expertise with practical examples of
           some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          repositories.
         </motion.p>
       </div>
 
