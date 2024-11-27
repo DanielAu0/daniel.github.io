@@ -12,12 +12,14 @@ import figma from './tech/figma.png';
 import frontend from './icons/frontend.png';
 import git from './tech/git.png';
 import github from './icons/github.png';
+import github1 from './icons/github-alt.png';
 import graphql from './tech/graphql.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
 import kelhel from './company/kelhel.png';
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
+import linkedin from './icons/linkedin.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 import math from './projects/math-magicians.png';
@@ -60,6 +62,8 @@ export {
   close,
   download,
   downloadHover,
+  linkedin,
+  github1,
   pineapple,
   pineappleHover,
   menu,
