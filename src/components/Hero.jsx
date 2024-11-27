@@ -33,14 +33,14 @@ const Hero = () => {
               <h1 className={`${styles.heroHeadText} text-eerieBlack`}>
                 Hi, I'm Daniel.
               </h1>
-              <h1 className={`${styles.heroTextLight} text-[#2975A7]`}>
+              <h1 className={`${styles.heroTextLight}`}>
                 Full Stack Developer
               </h1>
               <div className="flex flex-row gap-5 items-center mt-8">
                 <a href="#about">
                   <button
                     className="live-demo flex justify-center 
-        sm:text-[16px] text-[14px] bg-eerieBlack text-timberWolf 
+        sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
         font-bold font-poppins items-center py-5 pl-2 pr-3 
         whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
         w-[120px] h-[46px] rounded-[10px] 
@@ -53,7 +53,7 @@ const Hero = () => {
                 </a>
                 <button
                   className="live-demo flex justify-center 
-        sm:text-[16px] text-[14px] bg-eerieBlack text-timberWolf 
+        sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
         font-bold font-poppins items-center py-5 pl-2 pr-3 
         whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
         w-[120px] h-[46px] rounded-[10px] 
