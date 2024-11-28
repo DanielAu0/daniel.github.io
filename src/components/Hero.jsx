@@ -22,13 +22,13 @@ const Hero = () => {
       sm:bg-hero bg-hero-mobile overflow-hidden"
       >
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
-        lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
+          className={`absolute inset-0 sm:top-[200px] top-[120px] 
+        lg:top-[120px] xl:top-[200px] ${styles.paddingX} 
         max-w-7xl mx-auto flex sm:flex-row flex-col items-start 
         justify-between gap-8`}
         >
           {/* Text Section */}
-          <div className="inline-flex p-20 -m-20 rounded-full items-center bg-flashWhite aspect-square">
+          <div className="inline-flex p-[20px] -m-[20px] rounded-full items-center bg-flashWhite aspect-square">
             <div className="inline-flex flex-col items-center">
               <h1 className={`${styles.heroHeadText} text-eerieBlack`}>
                 Hi, I'm Daniel.
@@ -36,30 +36,30 @@ const Hero = () => {
               <h1 className={`${styles.heroTextLight}`}>
                 Full Stack Developer
               </h1>
-              <div className="flex flex-row gap-5 items-center mt-8">
+              <div className="flex flex-row gap-8 items-center mt-6">
                 <a href="#about">
                   <button
                     className="live-demo flex justify-center 
-        sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
-        font-bold font-poppins items-center py-5 pl-2 pr-3 
-        whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
-        w-[120px] h-[46px] rounded-[10px] 
-        hover:bg-battleGray 
-        hover:text-white transition duration-[0.2s] 
-        ease-in-out"
+                    sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
+                    font-bold font-poppins items-center py-5 pl-2 pr-3 
+                    whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
+                    w-[120px] h-[46px] rounded-[10px] 
+                    hover:bg-battleGray 
+                    hover:text-white transition duration-[0.2s] 
+                    ease-in-out"
                   >
                     About Me
                   </button>
                 </a>
                 <button
                   className="live-demo flex justify-center 
-        sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
-        font-bold font-poppins items-center py-5 pl-2 pr-3 
-        whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
-        w-[120px] h-[46px] rounded-[10px] 
-        hover:bg-battleGray 
-        hover:text-white transition duration-[0.2s] 
-        ease-in-out"
+                  sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
+                  font-bold font-poppins items-center py-5 pl-2 pr-3 
+                  whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
+                  w-[120px] h-[46px] rounded-[10px] 
+                  hover:bg-battleGray 
+                  hover:text-white transition duration-[0.2s] 
+                  ease-in-out"
                   onClick={() =>
                     window.open(
                       "https://drive.google.com/file/d/1JD0RLWiISyaE7sGFvLShCx_oWLXw7Pfo/view?usp=sharing",
@@ -87,8 +87,8 @@ const Hero = () => {
               <AnimatedText
                 text={[
                   "Experience in Enterprise Application Development.",
-                  "Experience in Full-Stack Web Development.",
-                  "Experience in DevOps.",
+                  "      Experience in Full-Stack Web Development.",
+                  "                       Experience in DevOps.",
                 ]}
                 el="p"
                 className={`${styles.heroSubText} mt-8`}
