@@ -14,36 +14,35 @@ const Hero = () => {
         <img
           src={bwmap}
           alt="world map"
-          className="w-full h-full sm:block hidden object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       <section
-        className="relative flex flex-col sm:flex-row w-full h-screen mx-auto 
+        className="relative flex flex-col w-full h-screen mx-auto 
       sm:bg-hero bg-hero-mobile overflow-hidden"
       >
         <div
-          className={`absolute inset-0 sm:top-[200px] top-[120px] 
+          className={`absolute inset-0 sm:top-[150px] top-[120px]
         lg:top-[120px] xl:top-[200px] ${styles.paddingX} 
-        max-w-7xl mx-auto flex sm:flex-row flex-col items-start 
-        justify-between gap-8`}
+        max-w-7xl mx-auto flex flex-col xl:items-start gap-8`}
         >
           {/* Text Section */}
-          <div className="inline-flex p-[20px] -m-[20px] rounded-full items-center bg-flashWhite aspect-square">
-            <div className="inline-flex flex-col items-center">
-              <h1 className={`${styles.heroHeadText} text-eerieBlack`}>
+          <div className="flex p-[20px] -m-[20px] rounded-full items-center xl:bg-flashWhite bg-transparent aspect-square">
+            <div className="flex flex-col items-center mx-auto">
+              <h1 className={`${styles.heroHeadText} flex text-eerieBlack`}>
                 Hi, I'm Daniel.
               </h1>
-              <h1 className={`${styles.heroTextLight}`}>
+              <h1 className={`${styles.heroTextLight} flex`}>
                 Full Stack Developer
               </h1>
-              <div className="flex flex-row gap-8 items-center mt-6">
+              <div className="flex flex-col xl:flex-row gap-8 items-center mt-6">
                 <a href="#about">
                   <button
                     className="live-demo flex justify-center 
                     sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
                     font-bold font-poppins items-center py-5 pl-2 pr-3 
-                    whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
-                    w-[120px] h-[46px] rounded-[10px] 
+                    whitespace-nowrap gap-1 sm:w-[160px] sm:h-[50px] 
+                    w-[150px] h-[46px] rounded-[10px] 
                     hover:bg-battleGray 
                     hover:text-white transition duration-[0.2s] 
                     ease-in-out"
@@ -55,8 +54,8 @@ const Hero = () => {
                   className="live-demo flex justify-center 
                   sm:text-[16px] text-[14px] bg-eerieBlack text-flashWhite 
                   font-bold font-poppins items-center py-5 pl-2 pr-3 
-                  whitespace-nowrap gap-1 sm:w-[150px] sm:h-[50px] 
-                  w-[120px] h-[46px] rounded-[10px] 
+                  whitespace-nowrap gap-1 sm:w-[160px] sm:h-[50px] 
+                  w-[150px] h-[46px] rounded-[10px] 
                   hover:bg-battleGray 
                   hover:text-white transition duration-[0.2s] 
                   ease-in-out"
@@ -69,20 +68,22 @@ const Hero = () => {
                 >
                   My Resume
                 </button>
-                <button
-                  className="flex w-[50px] h-[50px]"
-                  onClick={() =>
-                    window.open("https://www.linkedin.com/in/daniel-au0/")
-                  }
-                >
-                  <img src={linkedin} />
-                </button>
-                <button
-                  className="flex w-[50px] h-[50px]"
-                  onClick={() => window.open("https://github.com/DanielAu0")}
-                >
-                  <img src={github1} />
-                </button>
+                <div className="flex flex-row gap-8">
+                  <button
+                    className="flex w-[50px] h-[50px]"
+                    onClick={() =>
+                      window.open("https://www.linkedin.com/in/daniel-au0/")
+                    }
+                  >
+                    <img src={linkedin} />
+                  </button>
+                  <button
+                    className="flex w-[50px] h-[50px]"
+                    onClick={() => window.open("https://github.com/DanielAu0")}
+                  >
+                    <img src={github1} />
+                  </button>
+                </div>
               </div>
               <AnimatedText
                 text={[
